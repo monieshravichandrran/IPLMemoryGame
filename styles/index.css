@@ -1,0 +1,75 @@
+html {
+  background: url("../images/bgimg.jpg");
+  background-size: cover;
+  font-family: "Odibee Sans", cursive;
+  color: whitesmoke;
+  min-height: 100%;
+}
+
+.levelpass {
+  color: white;
+  font-size: xx-large;
+  margin-top: 50vh;
+}
+#head {
+  color: whitesmoke;
+  font-size: 5vw;
+}
+
+.card_cont {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: auto auto auto auto auto;
+  margin-left: 40px;
+}
+
+.imag {
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.ulc {
+  min-width: 100%;
+}
+
+.ulcont {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 4vw;
+  border: 1px solid rgb(133, 211, 15);
+  border-radius: 10px;
+  background-color: whitesmoke;
+  padding: 10px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.div1 {
+  animation: spinner 1s infinite linear;
+  transform-style: preserve-3d;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+  50% {
+    transform: rotate3d(1, 1, 1, 180deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
