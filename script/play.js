@@ -76,7 +76,6 @@ shuffle(arr);
 //console.log(arr);
 
 const cardclicked = (ids, item) => {
-  //console.log(st);
   if (st) {
     st = false;
     var audio = document.getElementById("audio");
@@ -180,11 +179,9 @@ const cardclicked = (ids, item) => {
       }, 500);
     }, 500);
   } else {
-    //console.log("hellos");
     let audio = document.getElementById("wrong");
     audio.play();
     const headdiv = document.getElementById("cont_card");
-    console.log("headidc ", headdiv.childNodes);
     if (headdiv.childNodes.length == 11) {
       document.getElementById("app").innerHTML = `
       <div align="center" class="levelpass">

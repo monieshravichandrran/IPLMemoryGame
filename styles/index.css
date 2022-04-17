@@ -1,7 +1,7 @@
 html {
   background: url("../images/bgimg.jpg");
   background-size: cover;
-  font-family: "Odibee Sans", cursive;
+  font-family: "Permanent Marker", cursive;
   color: whitesmoke;
   min-height: 100%;
 }
@@ -42,19 +42,24 @@ ul {
 }
 
 li {
-  font-size: 4vw;
-  border: 1px solid rgb(133, 211, 15);
+  font-size: 3vw;
+  border: 1px solid;
   border-radius: 10px;
-  background-color: whitesmoke;
   padding: 10px;
-  color: black;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   display: flex;
   justify-content: center;
   margin-top: 15px;
 }
 
+a:hover {
+  color: red;
+  font-size: 4vw;
+}
 a {
   text-decoration: none;
+  color: white;
 }
 
 .div1 {
