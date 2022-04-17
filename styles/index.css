@@ -6,10 +6,16 @@ html {
   min-height: 100%;
 }
 
+.imagdiv {
+  width: 200px;
+  height: 250px;
+  margin-bottom: 30px;
+}
+
 .levelpass {
   color: white;
   font-size: xx-large;
-  margin-top: 50vh;
+  margin-top: 45vh;
 }
 #head {
   color: whitesmoke;

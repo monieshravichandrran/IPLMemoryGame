@@ -94,17 +94,22 @@ const cardclicked = (ids, item) => {
           let ids2 = "card" + String(selected[1] + 1);
           const a2 = document.getElementById(ids1);
           const a3 = document.getElementById(ids2);
-          a1.removeChild(a2);
-          a1.removeChild(a3);
+          document.getElementById("tick").play();
+          a2.remove(a2);
+          a3.remove(a3);
           st = true;
           const headdiv = document.getElementById("cont_card");
           console.log("headidc ", headdiv.childNodes);
-          if (headdiv.childNodes.length == 11) {
+          console.log(headdiv.childNodes);
+          const collection = document.getElementsByTagName("img");
+          console.log(collection.length);
+          if (collection.length == 0) {
+            document.getElementById("win").play();
             document.getElementById("app").innerHTML = `
             <div align="center" class="levelpass">
-              <h1>Level Passed!!!<h1>
-              <a href="../pages/play2.html">Go to Next Level</a>
-            </div>
+            <h1>Level Passed!!!<h1>
+            <a href="../pages/play2.html">Go to Next Level</a>
+          </div>
             `;
           }
         }
@@ -134,15 +139,15 @@ const cardclicked = (ids, item) => {
                   console.log("headidc ", headdiv.childNodes);
                   if (headdiv.childNodes.length == 11) {
                     document.getElementById("app").innerHTML = `
-                    <div align="center" class="levelpass">
-                      <h1>Level Passed!!!<h1>
-                      <a href="../pages/play2.html">Go to Next Level</a>
-                    </div>
+                  <div align="center" class="levelpass">
+                    <h1>Level Passed!!!<h1>
+                    <a href="../pages/play2.html">Go to Next Level</a>
+                  </div>
                     `;
                   }
-                }, 0);
-              }, 500);
-            }, 500);
+                }, 200);
+              }, 400);
+            }, 400);
           }, 100);
         }
         if (ch == 4) {
@@ -173,11 +178,11 @@ const cardclicked = (ids, item) => {
                   `;
                 }
               }, 0);
-            }, 500);
-          }, 500);
+            }, 400);
+          }, 400);
         }
-      }, 500);
-    }, 500);
+      }, 400);
+    }, 400);
   } else {
     let audio = document.getElementById("wrong");
     audio.play();
